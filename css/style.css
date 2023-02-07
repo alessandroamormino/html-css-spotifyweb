@@ -234,5 +234,131 @@ footer{
     background-color: #282828;
     /* test */
 }
+
+footer .footer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+}
+
+footer .footer-container .song {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+
+    width: 10%;
+
+    padding-left: 1em;
+}
+
+footer .footer-container .song .song-icons{
+    color: #7D7F84;
+}
+
+footer .footer-container .song .song-icons .fa-regular {
+    padding: 0 .2em;
+}
+
+footer .footer-container .song .song-info {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+footer .footer-container .song .song-info .song-text h5{
+    color: #fff;
+}
+
+footer .footer-container .song .song-info .song-text .subtitle{
+    color: #7D7F84;
+    font-size: .7em;
+}
+
+footer .footer-container .song .song-info .song-img {
+    width: 40px;
+}
+
+footer .footer-container .song .song-info .song-img img {
+    width: 100%;
+}
+
+footer .footer-container .player {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: .5em;
+
+    width: 25%;
+}
+
+footer .footer-container .player .player-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 40%;
+    color: #fff;
+}
+
+footer .footer-container .player .player-controls .fa-circle-play {
+    font-size: 1.8em;
+}
+
+
+footer .footer-container .player .player-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+footer .footer-container .player .player-bar .progress-bar{
+    width: 80%;
+    background-color: #5A5A5A;
+    border-radius: 2px;
+}
+
+footer .footer-container .player .player-bar .current-bar{
+    width: 20%;
+    border: 2px solid #C1C1C1;
+    border-radius: 2px;
+}
+
+footer .footer-container .player .player-bar > span{
+    font-size: .6em;
+    color: #fff;
+}
+
+footer .footer-container .settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 10%;
+    padding-right: 1em;
+}
+
+footer .footer-container .settings .progress-bar{
+    width: 50%;
+    background-color: #5A5A5A;
+    border-radius: 2px;
+}
+
+footer .footer-container .settings .current-bar{
+    width: 30%;
+    border: 2px solid #C1C1C1;
+    border-radius: 2px;
+}
+
+footer .footer-container .settings .fa-solid{
+    font-size: .6em;
+    color: white;
+}
+
+
+
 /* /footer */
 
