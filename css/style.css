@@ -63,7 +63,7 @@ nav {
 }
 
 nav #logo {
-    width: 70%;
+    width: 150px;
 }
 
 nav ul {
@@ -152,9 +152,13 @@ nav .nav-user .user .user-icon .fa-solid{
 
 /* main */
 main {
+    height: calc(100vh - 80px);
     width: 80%;
     background-color: #141923;
     /* test */
+
+    overflow: auto;
+    padding: 1em;
 
     padding-top: 80px;
     color: #7D7F84;
@@ -179,6 +183,41 @@ main .main-nav ul li a:focus {
     color: #7D7F84;
     text-decoration: none;
 }
+
+main .recent h2{
+    color: #fff;
+}
+
+main .recent .card-container{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+
+    padding: 2em 0;
+}
+
+main .recent .card .card-img {
+    width: 180px;
+    height: 180px;
+}
+
+main .recent .card .card-img img {
+    width: 100%;
+}
+
+main .recent .card .card-text {
+    padding: 1em 0;
+    text-align: center;
+}
+
+main .recent .card .card-text .title{
+    color: #fff;
+}
+
+main .recent .card .card-text .subtitle{
+    font-size: .7em;
+}
+
 /* /main */
 
 /* footer */
