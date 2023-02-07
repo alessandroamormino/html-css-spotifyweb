@@ -184,11 +184,11 @@ main .main-nav ul li a:focus {
     text-decoration: none;
 }
 
-main .recent h2{
+main h2{
     color: #fff;
 }
 
-main .recent .card-container{
+main .card-container{
     display: flex;
     flex-flow: row wrap;
     gap: 1em;
@@ -196,27 +196,29 @@ main .recent .card-container{
     padding: 2em 0;
 }
 
-main .recent .card .card-img {
+main .card {
     width: 180px;
-    height: 180px;
 }
 
-main .recent .card .card-img img {
+main .card .card-img img {
     width: 100%;
 }
 
-main .recent .card .card-text {
+main .card .card-text {
     padding: 1em 0;
     text-align: center;
 }
 
-main .recent .card .card-text .title{
+main .card .card-text .title{
+    padding-bottom: .3em;
     color: #fff;
 }
 
-main .recent .card .card-text .subtitle{
+main .subtitle{
+    font-weight: 600;
     font-size: .7em;
 }
+
 
 /* /main */
 
