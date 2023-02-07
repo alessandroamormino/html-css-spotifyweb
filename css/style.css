@@ -297,6 +297,7 @@ footer .footer-container .player .player-controls {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: .5em;
 
     width: 40%;
     color: #fff;
@@ -336,6 +337,7 @@ footer .footer-container .settings {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: .5em;
 
     width: 10%;
     padding-right: 1em;
