@@ -30,6 +30,8 @@ nav {
     flex-flow: column nowrap;
 
     color: #707070;
+    font-weight: 600;
+    font-size: .9em;
     height: 100%;
 }
 
@@ -43,6 +45,20 @@ nav ul {
 
 nav .nav-info > ul {
     padding: 1em 0;
+}
+
+nav .nav-info ul li {
+    margin: 8px 0;
+}
+
+nav .nav-info ul li .nav-link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .nav-info ul li .nav-link .nav-link-icon img {
+    width: 1.5em;
 }
 
 nav .flex-container {
