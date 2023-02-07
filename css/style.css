@@ -193,13 +193,15 @@ main h2{
 main .card-container{
     display: flex;
     flex-flow: row wrap;
-    gap: 2em;
+    gap: 1em;
 
     padding: 2em 0;
 }
 
 main .card {
     width: 180px;
+    /* width: calc(100% / 6 - (.5em / 6 * 5)); */
+    /* test */
 }
 
 main .card .card-img img {
