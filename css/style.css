@@ -104,6 +104,11 @@ nav .playlist .playlist-add {
     margin: .8em 0 1em 0;
 }
 
+nav .playlist span {
+    color: #fff;
+    text-transform: uppercase;
+}
+
 nav .playlist .playlist-add .add-icon{
     display: flex;
     justify-content: center;
@@ -150,6 +155,29 @@ main {
     width: 80%;
     background-color: #141923;
     /* test */
+
+    padding-top: 80px;
+    color: #7D7F84;
+}
+
+main .main-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+
+    padding: 1em 0;
+
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .8em;
+}
+
+main .main-nav ul li a, 
+main .main-nav ul li a:visited,
+main .main-nav ul li a:focus {
+    color: #7D7F84;
+    text-decoration: none;
 }
 /* /main */
 
