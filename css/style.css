@@ -350,6 +350,10 @@ footer .footer-container .song .song-icons{
     color: #7D7F84;
 }
 
+footer .footer-container .song .song-icons .fa-regular:hover{
+    color: #fff;
+}
+
 footer .footer-container .song .song-icons .fa-regular {
     padding: 0 .2em;
 }
