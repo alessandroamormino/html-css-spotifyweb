@@ -156,6 +156,14 @@ nav .playlist .playlist-add .add-icon{
     font-size: 1.5em;
 }
 
+nav .playlist .playlist-add:hover .add-icon {
+    background-color: #fff;
+}
+
+nav .playlist .playlist-add:hover .add-text {
+    color: #fff;
+}
+
 nav .playlist ul li{
     padding: .5em 0;
 }
