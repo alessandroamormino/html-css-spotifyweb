@@ -83,13 +83,18 @@ nav .nav-info ul li {
 }
 
 nav .nav-info ul li:first-child{
-    border-left: 2px solid #ADFE2F;
+    /* border-left: 2px solid #ADFE2F; */
+    box-shadow: inset 2px 0px 0px 0px #adfe2f
 }
-
 nav .nav-info ul li .nav-link{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+nav .nav-info ul li .nav-link .nav-link-icon svg{
+    fill: #D2D2D2;
+    width: 1.5em;
 }
 
 nav .nav-info ul li .nav-link .nav-link-icon img {
@@ -110,6 +115,10 @@ nav a:focus {
 /* bonus */
 nav a:hover{
     color: white;
+}
+
+nav .nav-info ul li .nav-link:hover svg{
+    fill: #ffffff;
 }
 /* /bonus */
 
