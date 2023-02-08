@@ -619,8 +619,23 @@ footer .footer-container .settings .fa-solid{
         width: calc(100% / 2 - (1em / 2 * 1));
     }
 
+    footer .footer-container .song{
+        min-width: 50px;
+        font-size: .7em;
+    }
+
     footer .footer-container .player {
-        min-width: 200px;
+        min-width: 50px;
+        font-size: .9em;
+    }
+
+    footer .footer-container .settings {
+        min-width: 50px;
+        font-size: .7em;
+    }
+
+    footer .footer-container .player .player-bar {
+        gap: .5em;
     }
 
     footer .footer-container .settings .fa-solid {
@@ -628,7 +643,7 @@ footer .footer-container .settings .fa-solid{
     }
 
     footer .footer-container .player .player-controls {
-        gap: 1.5em;
+        gap: 1em;
     }
     
 }
