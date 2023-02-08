@@ -47,6 +47,11 @@ body{
     text-transform: uppercase;
 }
 
+/* bonus */
+.btn:hover {
+    transform: scale(1.1);
+}
+
 
 /* header */
 header {
@@ -90,8 +95,7 @@ nav .nav-info ul li {
 }
 
 nav .nav-info ul li:first-child{
-    /* border-left: 2px solid #ADFE2F; */
-    box-shadow: inset 2px 0px 0px 0px #adfe2f
+    box-shadow: inset 2px 0px 0px 0px #adfe2f;
 }
 nav .nav-info ul li .nav-link{
     display: flex;
@@ -194,6 +198,10 @@ nav .nav-user .user{
 
 nav .nav-user .user .user-icon .fa-solid{
     font-size: 2em;
+}
+
+nav .nav-user .user .user-text{
+    color: white;
 }
 
 nav .nav-user i:hover {
@@ -383,6 +391,11 @@ footer .footer-container .song .song-info .song-text .subtitle{
     font-size: .7em;
 }
 
+/* bonus */
+footer .footer-container .song .song-info .song-text .subtitle:hover{
+    text-decoration: underline;
+}
+
 footer .footer-container .song .song-info .song-img {
     width: 40px;
 }
@@ -432,11 +445,43 @@ footer .footer-container .player .player-bar .progress-bar{
     border-radius: 2px;
 }
 
-footer .footer-container .player .player-bar .current-bar{
-    width: 20%;
-    border: 2px solid #C1C1C1;
+footer .footer-container .player-bar .current-bar{
+    position: relative;
+
+    width: 30%;
+    background-color: #C1C1C1;
+    height: 4px;
     border-radius: 2px;
 }
+
+
+/* Bonus */
+
+footer .footer-container .current-bar::after {
+    position: absolute;
+    top: -100%;
+    right: -6px;
+
+    display: none;
+
+    content: '';
+
+    width: 12px;
+    height: 12px;
+    
+    border-radius: 6px;
+    background-color: #C1C1C1;
+
+}
+
+footer .footer-container .progress-bar:hover .current-bar{
+    background-color: #ADFE2F;
+}
+
+footer .footer-container .progress-bar:hover .current-bar::after {
+    display: inline-block;
+}
+
 
 footer .footer-container .player .player-bar > span{
     font-size: .6em;
@@ -453,15 +498,19 @@ footer .footer-container .settings {
     padding-right: 1em;
 }
 
-footer .footer-container .settings .progress-bar{
-    width: 50%;
-    background-color: #5A5A5A;
+
+footer .footer-container .settings .current-bar{
+    position: relative;
+
+    width: 30%;
+    background-color: #C1C1C1;
+    height: 4px;
     border-radius: 2px;
 }
 
-footer .footer-container .settings .current-bar{
-    width: 30%;
-    border: 2px solid #C1C1C1;
+footer .footer-container .settings .progress-bar{
+    width: 50%;
+    background-color: #5A5A5A;
     border-radius: 2px;
 }
 
