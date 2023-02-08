@@ -255,6 +255,31 @@ main .card {
     /* test */
 }
 
+main .card .card-img{
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .card .card-img .fa-regular {
+    position: absolute;
+
+    display: none;
+
+    font-size: 3em;
+    color: white;
+}
+
+main .card:hover .card-img img {
+    opacity: .5;
+}
+
+main .card:hover .card-img .fa-regular {
+    display: block;
+}
+
 main .card .card-img img {
     width: 100%;
 }
