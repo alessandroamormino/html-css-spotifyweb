@@ -51,12 +51,9 @@ body{
 /* header */
 header {
     z-index: 2;
-    /* height: calc(100vh - 80px); */
     width: 250px;
     background-color: #000000;
-    /* test */
 
-    /* padding: 1.5em; */
     overflow: hidden;
 }
 /* nav */
@@ -70,9 +67,13 @@ nav {
     height: 100%;
 }
 
-nav #logo {
+nav #logo .standard-logo{
     width: 200px;
     padding: 1.5em;
+}
+
+nav #logo .small-logo{
+    display: none;
 }
 
 nav ul {
@@ -195,6 +196,10 @@ nav .nav-user .user .user-icon .fa-solid{
     font-size: 2em;
 }
 
+nav .nav-user i:hover {
+    color: white;
+}
+
 
 /* /nav */
 /* /header */
@@ -217,6 +222,7 @@ main .main-nav ul {
     display: flex;
     justify-content: center;
     gap: 1em;
+    flex-wrap: wrap;
 
     padding: 1em 0;
 
@@ -264,9 +270,7 @@ main .card-container{
 }
 
 main .card {
-    /* width: 180px; */
     width: calc(100% / 6 - (1em / 6 * 5));
-    /* test */
 }
 
 main .card .card-img{
@@ -335,6 +339,7 @@ footer .footer-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1.5em;
 
     height: 100%;
 }
@@ -440,9 +445,8 @@ footer .footer-container .player .player-bar > span{
 
 footer .footer-container .settings {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    gap: .5em;
 
     width: 100%;
     max-width: 250px;
@@ -466,7 +470,112 @@ footer .footer-container .settings .fa-solid{
     color: white;
 }
 
-
-
 /* /footer */
 
+
+/* ----------------------- Responsive ----------------------- */
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    main .card {
+        width: calc(100% / 4 - (1em / 4 * 3));
+    }
+}
+/* / Tablet */
+
+/* Mobile S */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    main .card {
+        width: calc(100% / 2 - (1em / 2 * 1));
+    }
+}
+/* / Mobile S */
+
+/* Mobile XS */
+@media screen and (max-width: 575px){
+
+    header {
+        width: 50px;
+    }
+
+    nav #logo .standard-logo{
+        display: none;
+    }
+
+    nav #logo .small-logo{
+        display: block;
+        width: 50px;
+        padding: .5em;
+    }
+
+    nav .nav-info ul {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav .nav-info ul li {
+        padding: 0;
+        margin: 0;
+        font-size: 1.7em;
+    }
+
+    nav .nav-info ul li .nav-link a{
+        display: none;
+    }
+
+    nav .nav-info ul li:first-child {
+        box-shadow: none;
+    }
+
+    nav .flex-container {
+        justify-content: flex-end;
+    }
+
+    nav .flex-container .playlist {
+        display: none;
+    }
+
+    nav .flex-container .nav-user a, 
+    nav .flex-container .nav-user hr{
+        display: none;
+    }
+
+    nav .nav-user {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 1em;
+    }
+
+    nav .nav-user .user .user-icon .fa-solid {
+        font-size: 1.5em;
+    }
+
+    nav .nav-user .download .download-icon .fa-regular {
+        font-size: 1.5em;
+    }
+
+    main {
+        width: calc(100% - 50px);
+    }
+
+    main .card {
+        width: calc(100% / 2 - (1em / 2 * 1));
+    }
+
+    footer .footer-container .player {
+        min-width: 200px;
+    }
+
+    footer .footer-container .settings .fa-solid {
+        font-size: .7em;
+    }
+
+    footer .footer-container .player .player-controls {
+        gap: 1.5em;
+    }
+    
+}
+/* / MObile XS */
