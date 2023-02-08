@@ -428,6 +428,11 @@ footer .footer-container .player .player-controls .fa-circle-play {
     font-size: 1.8em;
 }
 
+/* Bonus */
+footer .footer-container .player .player-controls .fa-circle-play:hover {
+    transform: scale(1.1);
+}
+
 
 footer .footer-container .player .player-bar {
     display: flex;
