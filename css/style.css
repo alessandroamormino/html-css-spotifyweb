@@ -342,19 +342,17 @@ footer .footer-container{
 footer .footer-container .song {
     display: flex;
     align-items: center;
-    gap: 3em;
+    justify-content: space-between;
 
-    width: 10%;
+    width: 100%;
+    max-width: 250px;
 
     padding-left: 1em;
 }
 
 footer .footer-container .song .song-icons{
-    display: flex;
-    justify-content: center;
-    gap: .5em;
-
     color: #7D7F84;
+    padding: 0 .5em;
 }
 
 footer .footer-container .song .song-icons .fa-regular:hover{
@@ -362,7 +360,7 @@ footer .footer-container .song .song-icons .fa-regular:hover{
 }
 
 footer .footer-container .song .song-icons .fa-regular {
-    padding: 0 .2em;
+    padding: 0 .3em;
 }
 
 footer .footer-container .song .song-info {
@@ -394,16 +392,17 @@ footer .footer-container .player {
     align-items: center;
     gap: .5em;
 
-    width: 25%;
+    width: 100%;
+    min-width: 250px;
+    max-width: 500px;
 }
 
 footer .footer-container .player .player-controls {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: .5em;
+    gap: 2.5em;
 
-    width: 40%;
     color: #fff;
 }
 
@@ -416,12 +415,14 @@ footer .footer-container .player .player-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2em;
 
     width: 100%;
 }
 
 footer .footer-container .player .player-bar .progress-bar{
-    width: 80%;
+    flex-grow: 1;
+
     background-color: #5A5A5A;
     border-radius: 2px;
 }
@@ -443,7 +444,8 @@ footer .footer-container .settings {
     align-items: center;
     gap: .5em;
 
-    width: 10%;
+    width: 100%;
+    max-width: 250px;
     padding-right: 1em;
 }
 
@@ -460,7 +462,7 @@ footer .footer-container .settings .current-bar{
 }
 
 footer .footer-container .settings .fa-solid{
-    font-size: .6em;
+    font-size: .8em;
     color: white;
 }
 
