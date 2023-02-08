@@ -50,7 +50,7 @@ header {
     background-color: #000000;
     /* test */
 
-    padding: 1.5em;
+    /* padding: 1.5em; */
     overflow: hidden;
 }
 /* nav */
@@ -65,7 +65,8 @@ nav {
 }
 
 nav #logo {
-    width: 150px;
+    width: 200px;
+    padding: 1.5em;
 }
 
 nav ul {
@@ -78,6 +79,11 @@ nav .nav-info > ul {
 
 nav .nav-info ul li {
     margin: 8px 0;
+    padding: .2em 1.5em;
+}
+
+nav .nav-info ul li:first-child{
+    border-left: 2px solid #ADFE2F;
 }
 
 nav .nav-info ul li .nav-link{
@@ -90,12 +96,30 @@ nav .nav-info ul li .nav-link .nav-link-icon img {
     width: 1.5em;
 }
 
+nav .nav-info ul li .nav-link a.selected{
+    color: white;
+}
+
+nav a,
+nav a:visited,
+nav a:focus {
+    color: #707070;
+    text-decoration: none;
+}
+
+/* bonus */
+nav a:hover{
+    color: white;
+}
+/* /bonus */
+
 nav .flex-container {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
 
     height: 100%;
+    padding: .5em 1.5em 1.5em 1.5em;
 }
 
 nav .playlist .playlist-add {
@@ -186,6 +210,24 @@ main .main-nav ul li a:focus {
     text-decoration: none;
 }
 
+/* bonus */
+main .main-nav ul li a:hover{
+    color: white;
+}
+/* /bonus */
+
+main .main-nav ul li:first-child{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+main .main-nav ul li .border{
+    height: 2px;
+    width: 35%;
+    background-color: #ADFE2F;
+}
+
 main h2{
     color: #fff;
 }
@@ -199,8 +241,8 @@ main .card-container{
 }
 
 main .card {
-    width: 180px;
-    /* width: calc(100% / 6 - (.5em / 6 * 5)); */
+    /* width: 180px; */
+    width: calc(100% / 6 - (1em / 6 * 5));
     /* test */
 }
 
