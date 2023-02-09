@@ -232,10 +232,8 @@ nav .nav-user i:hover {
 
 /* main */
 main {
-    /* height: calc(100vh - 80px); */
     width: calc(100% - 250px);
     background-color: #141923;
-    /* test */
 
     overflow: auto;
     padding: 1em;
@@ -355,7 +353,6 @@ footer{
     height: 80px;
     width: 100%;
     background-color: #282828;
-    /* test */
 
     position: relative;
     z-index: 2;
