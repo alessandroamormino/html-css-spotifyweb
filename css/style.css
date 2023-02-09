@@ -112,9 +112,23 @@ nav .nav-info ul li {
     padding: .2em 1.5em;
 }
 
-nav .nav-info ul li:first-child{
-    box-shadow: inset 2px 0px 0px 0px #adfe2f;
+nav .nav-info ul li.active-link{
+    position: relative;
 }
+
+nav .nav-info ul li.active-link::before{
+    content: '';
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    height: 100%;
+    width: 2px;
+
+    background-color: #ADFE2F;
+}
+
 nav .nav-info ul li .nav-link{
     display: flex;
     align-items: center;
@@ -273,7 +287,7 @@ main .main-nav ul li.active{
     position: relative;
 }
 
-main .main-nav ul li.active::after {
+main .main-nav ul li.active::before {
     content: '';
 
     position: absolute;
