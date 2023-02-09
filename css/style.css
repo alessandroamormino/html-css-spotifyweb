@@ -5,6 +5,20 @@
 }
 /* Reset */
 
+/* Animazioni */
+
+@keyframes progress {
+    0% {
+        width: 30%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+/* /Animazioni */
+
 body{
     font-family: 'Montserrat', sans-serif;;
 }
@@ -485,6 +499,9 @@ footer .footer-container .current-bar::after {
 
 footer .footer-container .progress-bar:hover .current-bar{
     background-color: #ADFE2F;
+
+    /* animazione bonus */
+    animation: progress 10s linear;
 }
 
 footer .footer-container .progress-bar:hover .current-bar::after {
