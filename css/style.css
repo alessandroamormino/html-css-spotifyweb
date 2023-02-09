@@ -269,15 +269,22 @@ main .main-nav ul li a:hover{
 }
 /* /bonus */
 
-main .main-nav ul li:first-child{
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+main .main-nav ul li.active{
+    position: relative;
 }
 
-main .main-nav ul li .border{
+main .main-nav ul li.active::after {
+    content: '';
+
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 30px;
     height: 2px;
-    width: 35%;
+
     background-color: #ADFE2F;
 }
 
